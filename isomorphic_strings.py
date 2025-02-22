@@ -13,6 +13,10 @@
 # 5) if the same key is also present in values - return False  
 # 6) just add the unique key-value to makiing it a proper key-value dictionary
 # 7) Finally return True
+
+# space complexity: O(n)
+# Time complexity: O(n)
+
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         if len(s) != len(t):
