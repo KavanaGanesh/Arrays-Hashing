@@ -10,8 +10,8 @@ class Solution:
         new_str = ""
         for c in s:
             if c.isalnum():
-                new_str = new_str + c
-        return True if new_str == new_str[:-1] else False
+                new_str = new_str + c.lower()
+        return True if new_str == new_str[::-1] else False
         
 
 s = "Was it a car or a cat I saw?"
