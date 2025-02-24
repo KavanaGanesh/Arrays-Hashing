@@ -34,10 +34,10 @@ class Solution:
         while i < n:
             j=i
 
-            if s[j] != '*':
+            while s[j] != '*':
                 j+=1
             length = int(s[i:j])
-            decoded_strings.append(s[j+1 : j+1+length])      
+            decoded_strings.append(s[j+1:j+1+length])      
             
             i = j+1+length
         return decoded_strings
